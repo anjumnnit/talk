@@ -1,0 +1,31 @@
+->for search user i am going to change sneha fetchuser function in controller/user with the yt alluser function of channel chat app mern first 
+->i have skipped the part where user cannot find his username while adding users 
+->right may profile icon i skipped
+->frontend k /authentication/signup pe
+ toast({
+        title: "Registration Successful",
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+        position: "bottom",
+      });
+      localStorage.setItem("userInfo", JSON.stringify(data));
+      ye vale code may store kr rha h info localstorage may ye krna h tujhe sneha se connnect krne k badd uska login signup frontend lene k baad
+->bhen**** itne dino se jo postman vali dikkat aaa rhi thi vo isiliye kyuki app.use(not found ) and app.use(errorhandler) sala upper likha hua 
+tha uusko jb /api/user endpoint k declaration k niche kiya toh chl gya madarjaat
+->userRoutes i have commentdowned the protect middleware
+->kabhi bhi user ko lo n toh user&& kr lena to ensure ki undefined value na access kro
+->thx a lot to chatgpt it helped to resolve an issue ki jb bhi main page reload kr rhi thi toh saari chats info gayab ho ja rhi thi usne mychats may loacals
+storage ka use kiya and now it is resolved:
+->my justifycontent box is start wokrking:-
+             <Box
+            display="flex"->due to this
+            flexDir="column"
+            justifyContent="flex-end"
+            p={3}
+            bg="#E8E8E8"
+            w="100%"
+            h="100%"
+            borderRadius="lg"
+            overflowY="hidden"
+             >
